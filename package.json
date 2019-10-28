@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/creyes17/boolean-string-parser/issues"
   },
-  "homepage": "https://github.com/creyes17/boolean-string-parser#readme"
+  "homepage": "https://github.com/creyes17/boolean-string-parser#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
