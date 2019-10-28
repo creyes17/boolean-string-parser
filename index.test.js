@@ -5,14 +5,14 @@ describe('Module', () => {
     expect(BooleanStringParser.parseString).toBeDefined();
     const stringToMatch = 'potato';
     const matcher = BooleanStringParser.parseString(stringToMatch);
-    expect(matcher(stringToMatch)).toBeTruthy();
+    expect(matcher([stringToMatch])).toBeTruthy();
   });
 
   it('can mismatch single value parsed from a string', () => {
     expect(BooleanStringParser.parseString).toBeDefined();
     const stringToMatch = 'potato';
-    const stringToTest = 'buttons';
+    const stringsToTest = ['buttons'];
     const matcher = BooleanStringParser.parseString(stringToMatch);
-    expect(matcher(stringToTest)).toBeFalsy();
+    expect(matcher(stringsToTest)).toBeFalsy();
   });
 });
