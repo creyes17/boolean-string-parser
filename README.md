@@ -9,8 +9,16 @@ Created to be used in a solution for tagging tests. For example, we might tag on
 ```javascript
 const BooleanStringParser = require('@creyes17/boolean-string-parser');
 
-const matcher = BooleanStringParser.parseString('vegetable');
+const potatoMatcher = BooleanStringParser.parseString('potato');
 
-matcher(['fruit', 'vegetable']); // true
-matcher(['cheese']); // false
+veggieMatcher(['potato']); // true
+veggieMatcher(['lemon']); // false
+
+const fluffyMammalAnimalMatcher = BooleanStringParser.parseString(
+  'animal&mammal&fluffy',
+);
+
+fluffyMammalAnimalMatcher(['animal', 'mammal', 'fluffy']); // true
+fluffyMammalAnimalMatcher(['mammal', 'fluffy', 'mammoth']); // false
+fluffyMammalAnimalMatcher(['animal', 'mammal']); // false
 ```
