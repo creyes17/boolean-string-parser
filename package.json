@@ -1,0 +1,22 @@
+{
+  "name": "@creyes17/boolean-string-parser",
+  "version": "1.0.0",
+  "description": "Parses a string containing boolean matching logic into a function to test matches.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creyes17/boolean-string-parser.git"
+  },
+  "keywords": [
+    "utility"
+  ],
+  "author": "Christopher R Reyes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/creyes17/boolean-string-parser/issues"
+  },
+  "homepage": "https://github.com/creyes17/boolean-string-parser#readme"
+}
