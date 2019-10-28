@@ -10,7 +10,6 @@ Created to be used in a solution for tagging tests. For example, we might tag on
 const BooleanStringParser = require('@creyes17/boolean-string-parser');
 
 const potatoMatcher = BooleanStringParser.parseString('potato');
-
 veggieMatcher(['potato']); // true
 veggieMatcher(['lemon']); // false
 
@@ -21,4 +20,11 @@ const fluffyMammalAnimalMatcher = BooleanStringParser.parseString(
 fluffyMammalAnimalMatcher(['animal', 'mammal', 'fluffy']); // true
 fluffyMammalAnimalMatcher(['mammal', 'fluffy', 'mammoth']); // false
 fluffyMammalAnimalMatcher(['animal', 'mammal']); // false
+
+const notFlakyMatcher = BooleanStringParser.parseString('^flaky');
+notFlakyMatcher([]); // true
+notFlakyMatcher(['flaky']); // false
+notFlakyMatcher(['p0']); // true
+notFlakyMatcher(['p0', 'fast']); // true
+notFlakyMatcher(['p0', 'fast', 'flaky']); // false
 ```
