@@ -6,6 +6,8 @@ Created to be used in a solution for tagging tests. For example, we might tag on
 
 # Usage
 
+Create a matching function by passing a boolean statement in [Disjunctive Normal Form](https://en.wikipedia.org/wiki/Disjunctive_normal_form) using the `&` (ampersand) character to signify "AND", `|` (pipe) character to signify "OR", and the `^` (carat) character as a prefix to signify NOT.
+
 ```javascript
 const BooleanStringParser = require('@creyes17/boolean-string-parser');
 
