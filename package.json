@@ -1,6 +1,6 @@
 {
   "name": "@creyes17/boolean-string-parser",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Parses a string containing boolean matching logic into a function to test matches against a set of strings.",
   "main": "index.js",
   "scripts": {
